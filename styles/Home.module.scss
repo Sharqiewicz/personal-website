@@ -1,0 +1,30 @@
+@import "./variables";
+
+.dash {
+  width: $dashSize;
+  height: $dashSize;
+  border-radius: 50%;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dash--red {
+  background-color: #de1a1a;
+  &:hover {
+    background-color: #ad1414;
+  }
+}
+.dash--yellow {
+  background-color: #ded61a;
+  &:hover {
+    background-color: #918c12;
+  }
+}
+.dash--green {
+  background-color: #1ade39;
+  &:hover {
+    background-color: #108521;
+  }
+}
