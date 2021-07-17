@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <div className="navbar__container">
             <div className="navbar__menu">
-                <div className="navbar__group">TESTOWANIE
+                <div className="navbar__group">
                     <div className={styles.dash + " " + styles["dash--red"]}></div>
                     <div className={styles.dash + " " + styles["dash--yellow"]}></div>
                     <div className={styles.dash + " " + styles["dash--green"]}></div>
