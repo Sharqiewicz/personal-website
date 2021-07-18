@@ -60,12 +60,48 @@
 
 .navbar__container {
     background-color: #1e1e1e;
-    width: 300px;
-    height: 115px;
     padding: 15px;
     border-radius: 10px;
     margin: 30px;
     position: absolute;
     right: 10px;
     top: 10px;
+    transition: 0.3s;
+}
+
+.navbar--open {
+    width: 300px;
+    height: 115px;
+
+    & .navbar__logo {
+        display: none;
+    }
+}
+
+.navbar--closed {
+    width: 150px;
+    height: 150px;
+
+    & a,
+    & .dash,
+    & div {
+        display: none;
+    }
+
+    & .navbar__logo {
+        & path {
+            transition: 0.5s;
+        }
+    }
+
+    & .navbar__logo:hover {
+        cursor: pointer;
+        color: #ffd705;
+        & path:first-of-type {
+            fill: #fa1dff;
+        }
+        & path:nth-of-type(2) {
+            fill: #17c3fa;
+        }
+    }
 }
