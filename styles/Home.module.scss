@@ -1,1 +1,9 @@
+@import "./variables.scss";
 @import "./home/Navbar.module.scss";
+
+.container {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  background-image: linear-gradient(75deg, $darkTheme, $darkTheme 40%, $lightTheme 40%, $lightTheme);
+}
