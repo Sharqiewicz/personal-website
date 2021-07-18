@@ -1,9 +1,65 @@
 @import "./variables.scss";
 @import "./home/Navbar.module.scss";
 
-.container {
+.home__container {
   position: relative;
   height: 95vh;
   width: 100%;
-  background-image: linear-gradient(75deg, $darkTheme, $darkTheme 40%, $lightTheme 40%, $lightTheme);
+  background-image: linear-gradient(65deg, $darkTheme, $darkTheme 42%, $lightTheme 40%, $lightTheme);
+  h1 {
+    font-size: 62px;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.myphoto {
+  position: absolute;
+  width: 50%;
+  bottom: -5px;
+
+  max-height: 95vh;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity 500ms ease 0s;
+  z-index: 999;
+}
+
+.greetings__container {
+  grid-column: 8/11;
+  grid-row: 4/12;
+
+  h1 {
+    font-size: 68px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 52px;
+    text-align: right;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 42px;
+    text-align: right;
+  }
+  h4 {
+    font-size: 36px;
+    text-align: right;
+    margin: 0px;
+  }
+}
+
+.text--pink {
+  color: $themeOne;
+}
+
+.text--aqua {
+  color: $themeThree;
+}
+
+.text--yellow {
+  color: $themeTwo;
 }

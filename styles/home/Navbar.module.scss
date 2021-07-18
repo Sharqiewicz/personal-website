@@ -97,12 +97,11 @@
 
     & .navbar__logo:hover {
         cursor: pointer;
-        color: #ffd705;
+        & path {
+            fill: #17c3fa;
+        }
         & path:first-of-type {
             fill: #fa1dff;
-        }
-        & path:nth-of-type(2) {
-            fill: #17c3fa;
         }
     }
 }

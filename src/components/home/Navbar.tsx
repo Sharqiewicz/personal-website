@@ -6,7 +6,7 @@ import Instagram from '../../../public/icons/instagram.svg';
 import Linkedin from '../../../public/icons/linkedin.svg';
 import Youtube from '../../../public/icons/youtube.svg';
 
-import Logo from '../../../public/socials-logo.svg';
+import Logo from '../../../public/logosocials.svg';
 
 
 export default function Navbar() {
